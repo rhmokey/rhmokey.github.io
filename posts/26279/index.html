@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Keyboard">
+
+
+
+
+
+<title>焊接(底灯)教程 | Mokey客制化键盘</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Mokey&#39;s Keyboard</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Mokey&#39;s Keyboard</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">文章顶部</a>
+        <a onclick="go_bottom()">文章底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "全部折叠"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "全部展开"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">焊接(底灯)教程</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Keyboard</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-05-22&nbsp;&nbsp;11:30:12</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote><p>底灯型号：WS2812B-5050<br>推荐工具：黄花907s电烙铁</p>
+</blockquote>
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=716495466&bvid=BV1NX4y1w7Vy&cid=362382303&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+
+<h3 id="特别注意！！！"><a href="#特别注意！！！" class="headerlink" title="特别注意！！！"></a>特别注意！！！</h3><blockquote><p>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！<br>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！<br>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！</p>
+</blockquote>
+<h3 id="推荐工具"><a href="#推荐工具" class="headerlink" title="推荐工具"></a>推荐工具</h3><p>电烙铁最好使用黄花907s <a href>因为可以配合一个非常小的烙铁头使用</a> 以下三款均可，或是兼容 <a href>IS型弯尖头</a> 的也可以</p>
+<p><img src="/posts/26279/laotie.jpg"></p>
+<p>烙铁头推荐使用这种 <a href>IS型弯尖头</a></p>
+<p><img src="/posts/26279/tou.jpg"></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/posts/49140/">其他视频</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Keyboard | Mokey's <a href="https://shop266774397.taobao.com" target="_blank">store</a> & <a href="https://shop266774397.taobao.com" target="_blank">淘宝</a>
+    </div>
+</span><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279979668'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279979668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</footer>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+</html>

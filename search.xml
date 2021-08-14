@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>固件刷写教程(升级固件或更换固件)</title>
+    <url>/posts/15924/</url>
+    <content><![CDATA[<blockquote><p>该教程将介绍如何使用QMK Toolbox对键盘固件进行更新</p>
+</blockquote>
+
+<p>1.下载QMK Toolbox<br>  Windows：<a href="https://mokey.lanzoui.com/i76Ecpbzfpg">点击下载</a><br>  Mac OS：<a href="https://mokey.lanzoui.com/ip5Dopbzeza">点击下载</a></p>
+<p>2.安装QMK Toolbox<br>  Windows下安装：解压至任意目录后打开，会提示install driver，一定要选择 <a href>确定</a> 或者 <a href>Yes</a> 即可安装！若不小心选择了 <a href>取消</a> 或者 <a href>No</a> 则在QMK Toolbox窗体上Flash附近右键，选择 <a href>install driver</a> ,Windows第一次刷固件必须安装驱动！否则刷入固件时出现如下提示：“Atmel DFU device connected （NO DRIVER）”</p>
+<h3 id="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"><a href="#刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法" class="headerlink" title="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"></a>刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法</h3><p>1.设置一个按键为“复位”作用，图中以ESC键为例:<br><img src="/posts/15924/sj1.jpg"><br>2.按下列操作后，按下ESC键位上临时作为“复位”作用的按键，之后QMK Toolbox会自动刷好固件<br><img src="/posts/15924/sj2.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
+<h3 id="刷写方法二：键盘不能正常进入VIA的刷入方法"><a href="#刷写方法二：键盘不能正常进入VIA的刷入方法" class="headerlink" title="刷写方法二：键盘不能正常进入VIA的刷入方法"></a>刷写方法二：键盘不能正常进入VIA的刷入方法</h3><p><img src="/posts/15924/sjff1.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>焊接(底灯)教程</title>
+    <url>/posts/26279/</url>
+    <content><![CDATA[<blockquote><p>底灯型号：WS2812B-5050<br>推荐工具：黄花907s电烙铁</p>
+</blockquote>
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=716495466&bvid=BV1NX4y1w7Vy&cid=362382303&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+
+<h3 id="特别注意！！！"><a href="#特别注意！！！" class="headerlink" title="特别注意！！！"></a>特别注意！！！</h3><blockquote><p>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！<br>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！<br>第一个灯位右侧有 <a href>启用底灯</a> 连接焊盘，连上才能用！</p>
+</blockquote>
+<h3 id="推荐工具"><a href="#推荐工具" class="headerlink" title="推荐工具"></a>推荐工具</h3><p>电烙铁最好使用黄花907s <a href>因为可以配合一个非常小的烙铁头使用</a> 以下三款均可，或是兼容 <a href>IS型弯尖头</a> 的也可以</p>
+<p><img src="/posts/26279/laotie.jpg"></p>
+<p>烙铁头推荐使用这种 <a href>IS型弯尖头</a></p>
+<p><img src="/posts/26279/tou.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VIA识别方法（驱动安装）</title>
+    <url>/posts/55414/</url>
+    <content><![CDATA[<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=291073109&bvid=BV1Tf4y187uj&cid=351390199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+<blockquote><h3 id="PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作"><a href="#PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作" class="headerlink" title="PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作"></a>PCB连接电脑后，不能自动识别并进入软件界面的解决办法<br><br>备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作</h3></blockquote>
+
+<h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>PCB连接上电脑后，若VIA没有自动识别进入界面，可先安装 <a href="https://mokey.lanzoui.com/ih2jUpbz35e">VIA英文版</a> ，英文版能识别进入后可再打开中文版使用。</p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>1.重启电脑<br>2.进入桌面后先关闭电脑上一切 <a href>杀毒软件</a> 以免杀毒软件阻挡驱动安装，可以正常识别进入VIA后杀毒软件可以正常使用<br>3.之后运行 <a href="https://mokey.lanzoui.com/iw0aWpbze5a">VIA识别驱动</a> （可提前下载到电脑上）<br><img src="/posts/55414/qudong.jpg"></p>
+<blockquote><p>分别点击驱动文件夹下的这两个<a href>“.bat”</a>格式的文件，待黑色对话框执行完毕后会自动关闭窗口(注意不可手动关闭)</p>
+</blockquote>
+
+<h3 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h3><p>如果执行 <a href>方法二</a> 的时候出现下列提示，也是安装不上识别驱动的，需要按步骤关闭 <a href>用户账户控制设置</a> 后再重新安装驱动</p>
+<p><img src="/posts/55414/yonghukongzhi.jpg"></p>
+<p>关闭 <a href>用户账户控制设置</a> 方法（以Win10为例）：<br><img src="/posts/55414/tiaozheng.jpg"></p>
+<blockquote><p>WinXP系统不能使用VIA，必须使用Win7及以上64位操作系统，32位操作系统会报错，必须安装驱动才可识别VIA，Mokey全系列产品均可以直接识别并进入VIA界面，无需JSON引导文件。</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>配列变更（61/63/64配列）</title>
+    <url>/posts/38310/</url>
+    <content><![CDATA[<blockquote><p>VIA中现包含多种配列，改键之前，请按照如下操作调整成自己键盘适用的即可<br>*更改完配列才能修改按键，否则按键功能不能应用到键盘上</p>
+</blockquote>
+
+<h3 id="首先打开软件界面"><a href="#首先打开软件界面" class="headerlink" title="首先打开软件界面"></a>首先打开软件界面</h3><p><img src="/posts/38310/tiaozheng.jpg"></p>
+<h3 id="标准左移64"><a href="#标准左移64" class="headerlink" title="标准左移64"></a>标准左移64</h3><p><img src="/posts/38310/64.jpg"></p>
+<h3 id="非左移63"><a href="#非左移63" class="headerlink" title="非左移63"></a>非左移63</h3><p><img src="/posts/38310/63.jpg"></p>
+<h3 id="标准61"><a href="#标准61" class="headerlink" title="标准61"></a>标准61</h3><p><img src="/posts/38310/61.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>按键设置方法</title>
+    <url>/posts/17032/</url>
+    <content><![CDATA[<h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/17032/jiemian.jpg"></p>
+<p>左下角为键值类型，将所有键值进行了分类<br>下方为键值列表<br>上方为键位布局</p>
+<h3 id="2-改键操作"><a href="#2-改键操作" class="headerlink" title="2.改键操作"></a>2.改键操作</h3><p>1.选择上方需要更改键值的键位<br>2.从下方点选需要的键值，即时生效</p>
+<h3 id="3-组合键"><a href="#3-组合键" class="headerlink" title="3.组合键"></a>3.组合键</h3><p>请参照<a href="../43929/index.html">宏设置</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>宏设置</title>
+    <url>/posts/43929/</url>
+    <content><![CDATA[<h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/43929/hongjiemian.jpg"></p>
+<p>1.点击“宏设置”开关进入宏设置界面<br>2.宏位置：可以进行15个宏设置（快捷键）<br>3.编辑框：进行宏设置编写，图例为：<a href>{KC_LCTL,KC_C}</a> 注释：复制命令，按键：先按下<a href>左Ctlr键</a>，再按下<a href>C键</a><br>4.基本键码：书写格式为<a href>{键码,键码}</a> ，可置入1个键码或连续多个键码（大写），键码之间用<a href>”,“（英语逗号）</a> 隔开<br>5.保存按钮：保存编辑框内设置好宏命令<br>6.宏设置结束后自动回车按钮（可按需求打开或关闭）</p>
+<h3 id="2-宏编辑教程"><a href="#2-宏编辑教程" class="headerlink" title="2.宏编辑教程"></a>2.宏编辑教程</h3><p>直接输出字符，比如： A B CD<br>解释：<br>保存后可以依次输出“A空格B空格CD”<br>编辑框会记录空格并输出，所以不要输入无关的空格<br>播放宏的时候会按照编辑时的大小写输出，所以需要注意大小写。由于该功能会自动配合Shift实现，有时候仅想输出指定键值，就需要下面的方法</p>
+<p>输出指定键值，比如退格键<br><img src="/posts/43929/tui1.jpg"><br><img src="/posts/43929/tui2.jpg"><br><img src="/posts/43929/tui3.jpg"></p>
+<h3 id="3-宏设置应用"><a href="#3-宏设置应用" class="headerlink" title="3.宏设置应用"></a>3.宏设置应用</h3><p>首先，检查宏设置页面下的 <a href>MACRO 0</a> 的编辑框里有预设好的内容。<br><img src="/posts/43929/shili.jpg"><br>按下方步骤设置即可<br><img src="/posts/43929/shezhifangfa.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>保存按键配置</title>
+    <url>/posts/59222/</url>
+    <content><![CDATA[<blockquote><p>此功能的作用是 <a href>备份/恢复</a> 用户按键设置<br>客制化键盘拥有多层设置按键，每次都逐一设置按键会非常繁琐，此功能相当与一键保存和一键恢复作用。</p>
+</blockquote>
+
+<h3 id="界面说明"><a href="#界面说明" class="headerlink" title="界面说明"></a>界面说明</h3><p><img src="/posts/59222/jiemian.jpg"><br>1.保存：保存现有VIA中的按键设置，并生成JSON文件<br>2.加载：加载JSON文件即可恢复设置</p>
+<p>JSON文件可设置中文，<a href>“.json”</a> 不可省略</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>灯效调整（软件控制/按键控制）</title>
+    <url>/posts/61522/</url>
+    <content><![CDATA[<blockquote><p>灯光控制分 <a href>软件控制</a> 和 <a href>按键控制</a> 两种，可根据实际需求选择</p>
+</blockquote>
+
+<h3 id="1-软件控制"><a href="#1-软件控制" class="headerlink" title="1.软件控制"></a>1.软件控制</h3><p><img src="/posts/61522/ruanjiantiaojie.jpg"></p>
+<h3 id="2-按键控制"><a href="#2-按键控制" class="headerlink" title="2.按键控制"></a>2.按键控制</h3><p><img src="/posts/61522/gongneng.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>层管理(FN按键设置)</title>
+    <url>/posts/37564/</url>
+    <content><![CDATA[<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=803566911&bvid=BV1by4y1u7kQ&cid=351375176&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+<h3 id="1-层的概念"><a href="#1-层的概念" class="headerlink" title="1.层的概念"></a>1.层的概念</h3><p>1.VIA支持多层键值的设定，目前根据型号开放了4层<br>2.与层概念对应的是键位与键值，肉眼可见的叫键位，每个键位在不同的层都可以设置不同的键值，4个层意味着可以设置4层键值完全不同的布局<br>3.层可以通过层管理键进行切换<br>4.层的计数是从0开始，<a href>Layer 0</a> 指实际的第一层，<a href>Layer 1</a> 指实际的第二层，<a href>Layer 2</a> 指实际的第三层，<a href>Layer 3</a> 指实际的第四层，</p>
+<h3 id="2-实现FN键功能（举例：如果需要实现FN-W等于方向上的功能）"><a href="#2-实现FN键功能（举例：如果需要实现FN-W等于方向上的功能）" class="headerlink" title="2.实现FN键功能（举例：如果需要实现FN+W等于方向上的功能）"></a>2.实现FN键功能（举例：如果需要实现FN+W等于方向上的功能）</h3><p>首先在默认 <a href>Layer 0</a> 中选择W的键位，并设定键值，然后选择一个键位当FN，通常默认是右Alt旁边的按钮，将键值设定为层管理中的<a href>MO(1)</a>，然后在<a href>Layer 1</a>的同样键位，将键值设定为UP(方向上)，即可实现上述效果</p>
+<p>该过程用到的是层管理中的 <a href>MO()</a> 键值</p>
+<p><a href>MO()</a> 表示临时切换到某层，按下时键盘会临时切换到指定层，松开时回到当前层</p>
+<h3 id="3-使用曾-层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）"><a href="#3-使用曾-层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）" class="headerlink" title="3.使用曾+层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）"></a>3.使用曾+层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）</h3><p>实现该功能仅需要使用层管理键中的 <a href>TO()</a> 键值</p>
+<p><a href>TO()</a> 表示切换到指定层，按下后会切换到指定层，并且停留，非主动情况下不会再回来</p>
+<p>利用该特性，可以在不同 <a href>Layer</a> 中设定一套完全不一样的键值，并在指定键位中放置<a href>TO()</a>键值，即可来回切换</p>
+<blockquote><p><a href>MO()</a> 属于“按住”换层，适用于充当FN键功能<br><a href>TO()</a> 属于“按一下”换层，因为“按一下”后不会切换会之前一层，例如两层切换需要如下设置：在 <a href>Layer 0</a> 中设置一个 <a href>TO(1)</a> ，之后在 <a href>Layer 1</a> 相同位置再设置一个 <a href>TO(0)</a> 回到上层</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于外壳适配的问题</title>
+    <url>/posts/10976/</url>
+    <content><![CDATA[<blockquote><p>请尽量购买GH60系列配套使用的外壳及零配件，板子严格按照GH60标准开孔和尺寸制作,PCB尺寸：285mm×95mm<br>外壳螺丝柱建议选择比较细的螺丝柱，由于板子是正装设计，一面过粗的螺丝柱接触到热插拔轴座引脚带来的按键串联问题<br>若已经购买过粗的螺丝柱外壳，请使用电工胶布为其绝缘，此问题带来的按键串联并非PCB质量问题，为选用的配件不匹配导致。</p>
+</blockquote>
+
+<p><img src="/posts/10976/waike.jpg"><br><img src="/posts/10976/waikeluosizhu.jpg"></p>
+<h3 id="塑料带加强筋外壳"><a href="#塑料带加强筋外壳" class="headerlink" title="塑料带加强筋外壳"></a>塑料带加强筋外壳</h3><p>如果是下图塑料带加强筋外壳，需要着重注意，加强筋部分容易损伤PCB底部的元件，需要降低加强筋高度才可以拧螺丝，如果因此原因导致元件脱落，不属于保修范围。<br><img src="/posts/10976/jiaqiangjin.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>VIA软件使用方法（视频）</title>
+    <url>/posts/56583/</url>
+    <content><![CDATA[<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=673593103&bvid=BV1pU4y1575j&cid=351378301&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>使用前请先看此文档，本文是目录型的，尤其是对刚入手客制化键盘的客户特别有帮助!</title>
+    <url>/posts/40421/</url>
+    <content><![CDATA[<blockquote><p>感谢您使用我们的产品，如果您是初次入手客制化键盘，这篇目录目录型的教程将会对您了解本款产品有很大帮助，按照顺序看完也不会觉得无从下手了，希望您能耐心看完</p>
+</blockquote>
+
+<h3 id="您拿到产品的第一件事情是测试"><a href="#您拿到产品的第一件事情是测试" class="headerlink" title="您拿到产品的第一件事情是测试"></a>您拿到产品的第一件事情是测试</h3><p>第一步：<br>包着板子的黑色塑胶袋是 <strong>防静电</strong> 的，希望您可以在测试的时候垫着它来测试，以免静电对PCB造成损坏，虽然这是不常见的。</p>
+<p>第二步：<br>然后就可以把PCB连接上电脑，发出前最后一步就是测试，<strong>我们会刷入一个基本的固件，测试按键触发正常，RGB灯工作正常，一切检查无误后才会给您发货</strong>，不过快递有时候很暴力，怕路上有所闪失，还是收到货后测试一下为好，您可以打开一个键盘按键测试网站 <a href="https://keyboard.bmcx.com/">点击进入</a> 从PCB背面用 <strong>镊子</strong> 通过短接热插拔引脚的方式进行按键触发测试（如下图）。</p>
+<ul>
+<li><p><strong>热插拔轴座我们是不会插轴测试的！因为会留下使用痕迹，如果您最后发现是轴座自身的问题，希望不要怪罪于我们，因为热插拔这个产品不是我们生产的，不插轴有时候不知道它的好坏，自开卖以来，这个元件坏了的概率是几万分之一！不过不要担心，如果是轴座本身有质量问题（其实是凯华厂的问题）我们也负责来回邮费为您退换（相当于我们替凯华厂背锅了），前提是不要安装！因为安装过的PCB会有拧螺丝的痕迹，这样就只能维修了，我们不收二手板子，也不会售卖二手板子，只希望您可以在安装前测试而已，谢谢！</strong></p>
+</li>
+<li><p><strong>需要说明的是,最好从PCB背面进行测试，正面的话可能会弄坏热插拔轴座</strong></p>
+</li>
+</ul>
+<p><img src="/posts/40421/chu.jpg"><br>如果按键都触发了（对不上号也没事，因为出厂基本固件不含<strong>FN</strong>这样的功能按键），那么恭喜您，您收到的产品是没有问题的，可以进行下面的步骤了，如果有不触发的情况，请及时联系客服，我们会为您妥善处理 <strong>（即收到货有产品质量问题并且是非人为导致的，只要没有安装过，可退可换！寄回的邮费我们会以，您先垫付，我们再将邮费补还给您的方式进行，解决您的售后之忧，我们负责四通一达费用，顺丰不负责，产品利薄，望请理解！）</strong></p>
+<h3 id="之后您可以下载客制化键盘必备的这几个软件"><a href="#之后您可以下载客制化键盘必备的这几个软件" class="headerlink" title="之后您可以下载客制化键盘必备的这几个软件"></a>之后您可以下载客制化键盘必备的这几个软件</h3><p>只要下载下来的是 <a href>.rar</a> 格式的压缩包，都是需要解压后再使用的，直接打开压缩包是没用的，需要解压！<br>只要下载下来的是 <a href>.rar</a> 格式的压缩包，都是需要解压后再使用的，直接打开压缩包是没用的，需要解压！<br>只要下载下来的是 <a href>.rar</a> 格式的压缩包，都是需要解压后再使用的，直接打开压缩包是没用的，需要解压！</p>
+<p><strong>VIA改键软件</strong><br>您可以根据自己的系统下载需要的版本，除 <strong>Mokey中文版</strong> 是rar压缩包的，解压后直接可以使用，其他都是需要安装后再使用。</p>
+<ul>
+<li><a href="https://mokey.lanzoui.com/iVW38pbz25i">Mokey中文版-Win</a></li>
+<li><a href="https://mokey.lanzoui.com/ih2jUpbz35e">英文原版-Win</a></li>
+<li><a href="https://mokey.lanzoui.com/i93afpw45vc">MAC英文版</a><br>曾有很多次客户问我为什么软件打不开，我一看原来是从压缩包里打开的软件，那是不行的，因为支持它运行的其他文件还在压缩包里，需要您将压缩包的内容全部解压到您的电脑上，之后再打开软件使用，这时候您可能需要先下载一个RAR解压缩软件，解压后再打开中文版 <a href="https://www.winrar.com.cn/">RAR解压缩软件点此下载</a></li>
+</ul>
+<p><strong>VIA识别驱动</strong><br>如果VIA下载好了，连接上电脑以后VIA总是停留在识别界面，那说明您的电脑上<strong>没有PCB芯片的驱动</strong>，需要您手动安装一下才能进入VIA软件</p>
+<ul>
+<li><a href="https://mokey.lanzoui.com/iw0aWpbze5a">VIA识别驱动点此下载</a><br>同样，它对您是一个全新的东西，您需要学习它如何才能被正确的安装 <a href="../../posts/55414/index.html">这是VIA识别驱动安装教程</a> ，里面包含详细的文字说明和视频，相信您在这里不会花费太多时间。</li>
+</ul>
+<h3 id="接下来您应该可以顺利的进入VIA界面了"><a href="#接下来您应该可以顺利的进入VIA界面了" class="headerlink" title="接下来您应该可以顺利的进入VIA界面了"></a>接下来您应该可以顺利的进入VIA界面了</h3><p>进入VIA软件以后，如果您有基础或者之前使用过，那么您可以熟练的上手操作，但要是您第一次使用VIA，肯定会觉得无从下手，那么您需要这个教程来帮助您了 <a href="../../posts/56583/index.html">VIA软件使用方法</a> 它是一个视频的讲解，仅仅只有5分钟，如果您能耐心看完，那么您将很快学会VIA软件的所有操作。</p>
+<h3 id="如果您耐心看完《VIA软件使用方法》，接下来的教程应该是不用看的，不过还是在这里赘述一下吧"><a href="#如果您耐心看完《VIA软件使用方法》，接下来的教程应该是不用看的，不过还是在这里赘述一下吧" class="headerlink" title="如果您耐心看完《VIA软件使用方法》，接下来的教程应该是不用看的，不过还是在这里赘述一下吧"></a>如果您耐心看完《VIA软件使用方法》，接下来的教程应该是不用看的，不过还是在这里赘述一下吧</h3><ul>
+<li>如果VIA里显示的配列跟您手上PCB的配列有不符合的情况请看 <a href="../../posts/38310/index.html">这个教程</a></li>
+<li>设置按键的方法请看 <a href="../../posts/17032/index.html">这个教程</a></li>
+<li>需要设置FN功能按键请看 <a href="../../posts/37564/index.html">这个教程</a></li>
+<li>如何调整灯光效果请看 <a href="../../posts/61522/index.html">这个教程</a></li>
+<li>宏设置/组合键设置方法请看 <a href="../../posts/43929/index.html">这个教程</a></li>
+<li>设置了按键肯定要保存，请看 <a href="../../posts/59222/index.html">这个教程</a></li>
+<li>因为我们的产品有<strong>售后服务</strong>，当然就会涉及到功能的升级，像手机升级系统一样，是在不断更新的，所以您需要学会如何给自己的PCB更新固件，那么您需要 <a href="../../posts/15924/index.html">这个教程</a> 来了解如何更新键盘固件</li>
+</ul>
+<h3 id="本网站其他您可能需要了解的地方"><a href="#本网站其他您可能需要了解的地方" class="headerlink" title="本网站其他您可能需要了解的地方"></a>本网站其他您可能需要了解的地方</h3><ul>
+<li>更新的固件您可以在 <a href="../../firmware">这里</a> 下载，同样您也可以直接点击右上角的 <a href="../../firmware">固件更新</a> 获得新固件，也可以加QQ群了解我们最新的产品研发进展和固件更新情况，最新的进展不用乱问，都会写在群公告里，QQ群：104496163</li>
+<li><strong>我们是真实的在做售后</strong>，有些特别典型的案例都会集中放在 <a href="../../mokey">售后案例</a> 里，您可以直观的感受到我们在用心做售后<br>还有一些您会遇到其实不难解决的问题，我们都集中放在了 <a href="../../help">常见问题</a> 里，供您参考</li>
+</ul>
+<blockquote><p>感谢您耐心的看完本篇目录，文中提到的链接都在最上放第一个 <a href="../../archives">使用教程</a> 中找到，希望本篇目录对您有所帮助。</p>
+</blockquote>
+
+
+
+
+
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>其他视频</title>
+    <url>/posts/49140/</url>
+    <content><![CDATA[<blockquote><p>底灯视频（选配）</p>
+</blockquote>
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=931046006&bvid=BV1AK4y197Wy&cid=351183019&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+<blockquote><p>多配列——拆热插拔轴座</p>
+</blockquote>
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=546038119&bvid=BV1jq4y177pZ&cid=351379219&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+<blockquote><p>多配列——安装热插拔轴座</p>
+</blockquote>
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=631050592&bvid=BV1vb4y1d7kx&cid=351380184&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+]]></content>
+  </entry>
+</search>

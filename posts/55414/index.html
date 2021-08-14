@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Keyboard">
+
+
+
+
+
+<title>VIA识别方法（驱动安装） | Mokey客制化键盘</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Mokey&#39;s Keyboard</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Mokey&#39;s Keyboard</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">文章顶部</a>
+        <a onclick="go_bottom()">文章底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "全部折叠"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "全部展开"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">VIA识别方法（驱动安装）</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Keyboard</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-05-22&nbsp;&nbsp;22:23:12</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?aid=291073109&bvid=BV1Tf4y187uj&cid=351390199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div>
+
+<blockquote><h3 id="PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作"><a href="#PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作" class="headerlink" title="PCB连接电脑后，不能自动识别并进入软件界面的解决办法备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作"></a>PCB连接电脑后，不能自动识别并进入软件界面的解决办法<br><br>备注：建议按如下步骤逐一操作，识别进入软件后可不再进行后续操作</h3></blockquote>
+
+<h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>PCB连接上电脑后，若VIA没有自动识别进入界面，可先安装 <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ih2jUpbz35e">VIA英文版</a> ，英文版能识别进入后可再打开中文版使用。</p>
+<h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>1.重启电脑<br>2.进入桌面后先关闭电脑上一切 <a href>杀毒软件</a> 以免杀毒软件阻挡驱动安装，可以正常识别进入VIA后杀毒软件可以正常使用<br>3.之后运行 <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/iw0aWpbze5a">VIA识别驱动</a> （可提前下载到电脑上）<br><img src="/posts/55414/qudong.jpg"></p>
+<blockquote><p>分别点击驱动文件夹下的这两个<a href>“.bat”</a>格式的文件，待黑色对话框执行完毕后会自动关闭窗口(注意不可手动关闭)</p>
+</blockquote>
+
+<h3 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h3><p>如果执行 <a href>方法二</a> 的时候出现下列提示，也是安装不上识别驱动的，需要按步骤关闭 <a href>用户账户控制设置</a> 后再重新安装驱动</p>
+<p><img src="/posts/55414/yonghukongzhi.jpg"></p>
+<p>关闭 <a href>用户账户控制设置</a> 方法（以Win10为例）：<br><img src="/posts/55414/tiaozheng.jpg"></p>
+<blockquote><p>WinXP系统不能使用VIA，必须使用Win7及以上64位操作系统，32位操作系统会报错，必须安装驱动才可识别VIA，Mokey全系列产品均可以直接识别并进入VIA界面，无需JSON引导文件。</p>
+</blockquote>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/posts/56583/">VIA软件使用方法（视频）</a>
+            
+            
+            <a class="next" rel="next" href="/posts/38310/">配列变更（61/63/64配列）</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Keyboard | Mokey's <a href="https://shop266774397.taobao.com" target="_blank">store</a> & <a href="https://shop266774397.taobao.com" target="_blank">淘宝</a>
+    </div>
+</span><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279979668'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279979668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</footer>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+</html>

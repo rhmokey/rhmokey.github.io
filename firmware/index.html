@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Keyboard">
+
+
+
+
+
+<title>固件下载 | Mokey客制化键盘</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Mokey&#39;s Keyboard</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Mokey&#39;s Keyboard</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">固件下载</h2>
+        
+        <section class="post-content">
+            <blockquote><p>固件请与 <a href="../update/index.html">更新日志</a> 中或与PCB上印刷的型号对照后选择版本，注意：各版本均无法与其他友商PCB互刷<br>固件命名方法，例：V1.3-1(V1.3PCB板型的固件第一次修改版)</p>
+</blockquote>
+
+<blockquote><p>Customers outside Chinese mainland,please remove the Chinese characters in firmware and firmware folder before cleaning the firmware.</p>
+</blockquote>
+
+<h3 id="左移64-固定配列"><a href="#左移64-固定配列" class="headerlink" title="左移64(固定配列)"></a>左移64(固定配列)</h3><p><strong>V1.3-3</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/iBfH9se1pcf">点此下载</a><br>更新内容：<br>新灯效28种，大家先测试，如有问题，后续修复<br>*此次固件更新完毕以后VIA中 <a href>灯光设置</a> 选项会失灵，点击 <a href>灯光设置</a> 会使VIA崩溃，重新打开即可，后面我会更新VIA新版本<br>*调整灯光时请使用 <a href>按键调整灯光</a> ，调整方法请参考“灯效调整教程”<a href="../posts/61522/index.html">点击进入</a><br>*刷新固件可能会引起配列变化，调整配列请参考<a href="../posts/38310/index.html">配列变更（61/63/64配列）</a><br>*其他配列理论上适用，可以先刷一下测试一下，如果不行，这两天再逐一更新<br><img src="/firmware/index/shiling.jpg"></p>
+<p><strong>V1.3-2</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i7v2nrwklaf">点此下载</a><br>更新内容：<br>全键无冲<br>1ms按键相应 <a target="_blank" rel="noopener" href="https://blog.seethis.link/scan-rate-estimator/">按键响应测试网页</a><br>*刷新固件可能会引起配列变化，调整配列请参考<a href="../posts/38310/index.html">配列变更（61/63/64配列）</a><br>*新固件如有BUG，请及时与我联系，也可先刷回上一个版本</p>
+<p><strong>V1.3-1</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ie0pPq6te7c">点此下载</a><br>更新内容：<br>修正VIA中的关于灯控制键错位问题</p>
+<h3 id="非左移63-多配列"><a href="#非左移63-多配列" class="headerlink" title="非左移63(多配列)"></a>非左移63(多配列)</h3><p><strong>V1.0-2</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i7v2nrwklaf">点此下载</a><br>更新内容：<br>全键无冲<br>1ms按键相应 <a target="_blank" rel="noopener" href="https://blog.seethis.link/scan-rate-estimator/">按键响应测试网页</a><br>*刷新固件可能会引起配列变化，调整配列请参考<a href="../posts/38310/index.html">配列变更（61/63/64配列）</a><br>*新固件如有BUG，请及时与我联系，也可先刷回上一个版本</p>
+<p><strong>V1.0-1</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/iMiZEq78t6b">点此下载</a><br>更新内容：<br>修正VIA中的关于灯控制键错位问题</p>
+<h3 id="标准61-固定配列"><a href="#标准61-固定配列" class="headerlink" title="标准61(固定配列)"></a>标准61(固定配列)</h3><p><strong>V1.2-1</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ioXlXpbzj8d">点此下载</a></p>
+<h3 id="旧版左移64-固定配列"><a href="#旧版左移64-固定配列" class="headerlink" title="旧版左移64(固定配列)"></a>旧版左移64(固定配列)</h3><p><strong>适用于V1.3之前版本(黑色PCB)</strong> <a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i4mogpbzjaf">点此下载</a></p>
+
+        </section>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Keyboard | Mokey's <a href="https://shop266774397.taobao.com" target="_blank">store</a> & <a href="https://shop266774397.taobao.com" target="_blank">淘宝</a>
+    </div>
+</span><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279979668'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279979668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</footer>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+</html>

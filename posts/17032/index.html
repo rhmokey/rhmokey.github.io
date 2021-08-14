@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Keyboard">
+
+
+
+
+
+<title>按键设置方法 | Mokey客制化键盘</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Mokey&#39;s Keyboard</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Mokey&#39;s Keyboard</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">文章顶部</a>
+        <a onclick="go_bottom()">文章底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "全部折叠"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "全部展开"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">按键设置方法</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Keyboard</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-05-22&nbsp;&nbsp;20:27:12</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/17032/jiemian.jpg"></p>
+<p>左下角为键值类型，将所有键值进行了分类<br>下方为键值列表<br>上方为键位布局</p>
+<h3 id="2-改键操作"><a href="#2-改键操作" class="headerlink" title="2.改键操作"></a>2.改键操作</h3><p>1.选择上方需要更改键值的键位<br>2.从下方点选需要的键值，即时生效</p>
+<h3 id="3-组合键"><a href="#3-组合键" class="headerlink" title="3.组合键"></a>3.组合键</h3><p>请参照<a href="../43929/index.html">宏设置</a></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/posts/38310/">配列变更（61/63/64配列）</a>
+            
+            
+            <a class="next" rel="next" href="/posts/37564/">层管理(FN按键设置)</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Keyboard | Mokey's <a href="https://shop266774397.taobao.com" target="_blank">store</a> & <a href="https://shop266774397.taobao.com" target="_blank">淘宝</a>
+    </div>
+</span><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279979668'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279979668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</footer>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Keyboard">
+
+
+
+
+
+<title>固件刷写教程(升级固件或更换固件) | Mokey客制化键盘</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Mokey&#39;s Keyboard</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Mokey&#39;s Keyboard</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">使用教程</a>
+                
+                    <a class="menu-item" href="/help">常见问题</a>
+                
+                    <a class="menu-item" href="/download">VIA下载</a>
+                
+                    <a class="menu-item" href="/firmware">固件下载</a>
+                
+                    <a class="menu-item" href="/shop">商店</a>
+                
+                    <a class="menu-item" href="/update">更新日志</a>
+                
+                    <a class="menu-item" href="/mokey">售后案例</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">文章顶部</a>
+        <a onclick="go_bottom()">文章底部</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "全部折叠"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "全部展开"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">固件刷写教程(升级固件或更换固件)</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Keyboard</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2021-05-22&nbsp;&nbsp;19:15:12</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <blockquote><p>该教程将介绍如何使用QMK Toolbox对键盘固件进行更新</p>
+</blockquote>
+
+<p>1.下载QMK Toolbox<br>  Windows：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i76Ecpbzfpg">点击下载</a><br>  Mac OS：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ip5Dopbzeza">点击下载</a></p>
+<p>2.安装QMK Toolbox<br>  Windows下安装：解压至任意目录后打开，会提示install driver，一定要选择 <a href>确定</a> 或者 <a href>Yes</a> 即可安装！若不小心选择了 <a href>取消</a> 或者 <a href>No</a> 则在QMK Toolbox窗体上Flash附近右键，选择 <a href>install driver</a> ,Windows第一次刷固件必须安装驱动！否则刷入固件时出现如下提示：“Atmel DFU device connected （NO DRIVER）”</p>
+<h3 id="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"><a href="#刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法" class="headerlink" title="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"></a>刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法</h3><p>1.设置一个按键为“复位”作用，图中以ESC键为例:<br><img src="/posts/15924/sj1.jpg"><br>2.按下列操作后，按下ESC键位上临时作为“复位”作用的按键，之后QMK Toolbox会自动刷好固件<br><img src="/posts/15924/sj2.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
+<h3 id="刷写方法二：键盘不能正常进入VIA的刷入方法"><a href="#刷写方法二：键盘不能正常进入VIA的刷入方法" class="headerlink" title="刷写方法二：键盘不能正常进入VIA的刷入方法"></a>刷写方法二：键盘不能正常进入VIA的刷入方法</h3><p><img src="/posts/15924/sjff1.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/posts/61522/">灯效调整（软件控制/按键控制）</a>
+            
+            
+            <a class="next" rel="next" href="/posts/43929/">宏设置</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Keyboard | Mokey's <a href="https://shop266774397.taobao.com" target="_blank">store</a> & <a href="https://shop266774397.taobao.com" target="_blank">淘宝</a>
+    </div>
+</span><script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279979668'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279979668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</footer>
+
+
+
+
+    </div>
+</body>
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+</html>
