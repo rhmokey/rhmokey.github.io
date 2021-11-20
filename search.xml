@@ -93,13 +93,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>灯效调整（软件控制/按键控制）</title>
+    <title>灯效调整（按键控制）</title>
     <url>/posts/61522/</url>
-    <content><![CDATA[<blockquote><p>灯光控制分 <a href>软件控制</a> 和 <a href>按键控制</a> 两种，可根据实际需求选择</p>
+    <content><![CDATA[<blockquote><p>目前所有出厂的板子刷入的都是最新的自定义灯效，使用自定义灯效以后，VIA软件中的 <a href>灯光设置</a> 就会失效，未来会去掉这个入口，调整灯效请使用下方的按键控制方法</p>
 </blockquote>
 
-<h3 id="1-软件控制"><a href="#1-软件控制" class="headerlink" title="1.软件控制"></a>1.软件控制</h3><p><img src="/posts/61522/ruanjiantiaojie.jpg"></p>
-<h3 id="2-按键控制"><a href="#2-按键控制" class="headerlink" title="2.按键控制"></a>2.按键控制</h3><p><img src="/posts/61522/gongneng.jpg"></p>
+<p><img src="/posts/61522/shixiao.jpg"></p>
+<h3 id="按键控制"><a href="#按键控制" class="headerlink" title="按键控制"></a>按键控制</h3><p><img src="/posts/61522/dengguangshezhi.jpg"></p>
 ]]></content>
   </entry>
   <entry>
@@ -143,6 +143,9 @@
     <title>使用前请先看此文档，本文是目录型的，尤其是对刚入手客制化键盘的客户特别有帮助!</title>
     <url>/posts/40421/</url>
     <content><![CDATA[<blockquote><p>感谢您使用我们的产品，如果您是初次入手客制化键盘，这篇目录目录型的教程将会对您了解本款产品有很大帮助，按照顺序看完也不会觉得无从下手了，希望您能耐心看完</p>
+</blockquote>
+
+<blockquote><p>灯效：<br>当您拿到PCB的时候灯的开着的，需要用按键才能关闭/打开灯光，因为刷入的是自定义灯效，而VIA软件中 [灯光设置] 是控制默认灯效的，它们已经被替换，所以 [灯光设置] 是失效的，后面会去掉这个入口，调整灯光请进入 <a href="../../posts/61522/index.html">灯效调整</a> 查看方法<br>固件：<br>刷入的是便于我们发货前检测按键触发的固件，有可能按键功能跟PCB字符不对应(按键功能可以通过VIA修改)，就是扫描率大！您要不适应，可以通过 <a href="../../firmware/index.html">固件下载</a> 获取适应您的扫描率固件，每个固件中都有说明，请详细阅读</p>
 </blockquote>
 
 <h3 id="您拿到产品的第一件事情是测试"><a href="#您拿到产品的第一件事情是测试" class="headerlink" title="您拿到产品的第一件事情是测试"></a>您拿到产品的第一件事情是测试</h3><p>第一步：<br>包着板子的黑色塑胶袋是 <strong>防静电</strong> 的，希望您可以在测试的时候垫着它来测试，以免静电对PCB造成损坏，虽然这是不常见的。</p>
