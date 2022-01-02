@@ -123,68 +123,6 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
-        <a onclick="go_top()">文章顶部</a>
-        <a onclick="go_bottom()">文章底部</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "全部折叠"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "全部展开"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
@@ -207,10 +145,9 @@
         </header>
 
         <div class="post-content">
-            <h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/17032/jiemian.jpg"></p>
-<p>左下角为键值类型，将所有键值进行了分类<br>下方为键值列表<br>上方为键位布局</p>
-<h3 id="2-改键操作"><a href="#2-改键操作" class="headerlink" title="2.改键操作"></a>2.改键操作</h3><p>1.选择上方需要更改键值的键位<br>2.从下方点选需要的键值，即时生效</p>
-<h3 id="3-组合键"><a href="#3-组合键" class="headerlink" title="3.组合键"></a>3.组合键</h3><p>请参照<a href="../43929/index.html">宏设置</a></p>
+            <blockquote><p>按键在VIA中改动之后即刻升效，无需额外操作</p>
+</blockquote>
+<p><img src="/posts/17032/gaijian.gif"></p>
 
         </div>
 
@@ -241,7 +178,7 @@
                 <a class="prev" rel="prev" href="/posts/55414/">VIA识别方法（驱动安装）</a>
             
             
-            <a class="next" rel="next" href="/posts/37564/">层管理(FN按键设置)</a>
+            <a class="next" rel="next" href="/posts/37564/">FN按键功能设置</a>
             
         </section>
 

@@ -66,10 +66,9 @@
   <entry>
     <title>按键设置方法</title>
     <url>/posts/17032/</url>
-    <content><![CDATA[<h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/17032/jiemian.jpg"></p>
-<p>左下角为键值类型，将所有键值进行了分类<br>下方为键值列表<br>上方为键位布局</p>
-<h3 id="2-改键操作"><a href="#2-改键操作" class="headerlink" title="2.改键操作"></a>2.改键操作</h3><p>1.选择上方需要更改键值的键位<br>2.从下方点选需要的键值，即时生效</p>
-<h3 id="3-组合键"><a href="#3-组合键" class="headerlink" title="3.组合键"></a>3.组合键</h3><p>请参照<a href="../43929/index.html">宏设置</a></p>
+    <content><![CDATA[<blockquote><p>按键在VIA中改动之后即刻升效，无需额外操作</p>
+</blockquote>
+<p><img src="/posts/17032/gaijian.gif"></p>
 ]]></content>
   </entry>
   <entry>
@@ -104,21 +103,16 @@
 ]]></content>
   </entry>
   <entry>
-    <title>层管理(FN按键设置)</title>
+    <title>FN按键功能设置</title>
     <url>/posts/37564/</url>
-    <content><![CDATA[<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=803566911&bvid=BV1by4y1u7kQ&cid=351375176&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div>
-
-<h3 id="1-层的概念"><a href="#1-层的概念" class="headerlink" title="1.层的概念"></a>1.层的概念</h3><p>1.VIA支持多层键值的设定，目前根据型号开放了4层<br>2.与层概念对应的是键位与键值，肉眼可见的叫键位，每个键位在不同的层都可以设置不同的键值，4个层意味着可以设置4层键值完全不同的布局<br>3.层可以通过层管理键进行切换<br>4.层的计数是从0开始，<a href>Layer 0</a> 指实际的第一层，<a href>Layer 1</a> 指实际的第二层，<a href>Layer 2</a> 指实际的第三层，<a href>Layer 3</a> 指实际的第四层，</p>
-<h3 id="2-实现FN键功能（举例：如果需要实现FN-W等于方向上的功能）"><a href="#2-实现FN键功能（举例：如果需要实现FN-W等于方向上的功能）" class="headerlink" title="2.实现FN键功能（举例：如果需要实现FN+W等于方向上的功能）"></a>2.实现FN键功能（举例：如果需要实现FN+W等于方向上的功能）</h3><p>首先在默认 <a href>Layer 0</a> 中选择W的键位，并设定键值，然后选择一个键位当FN，通常默认是右Alt旁边的按钮，将键值设定为层管理中的<a href>MO(1)</a>，然后在<a href>Layer 1</a>的同样键位，将键值设定为UP(方向上)，即可实现上述效果</p>
-<p>该过程用到的是层管理中的 <a href>MO()</a> 键值</p>
-<p><a href>MO()</a> 表示临时切换到某层，按下时键盘会临时切换到指定层，松开时回到当前层</p>
-<h3 id="3-使用曾-层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）"><a href="#3-使用曾-层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）" class="headerlink" title="3.使用曾+层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）"></a>3.使用曾+层管理实现多套配置（举例：需要实现多台电脑甚至多个软件间，使用不同的键值设定）</h3><p>实现该功能仅需要使用层管理键中的 <a href>TO()</a> 键值</p>
-<p><a href>TO()</a> 表示切换到指定层，按下后会切换到指定层，并且停留，非主动情况下不会再回来</p>
-<p>利用该特性，可以在不同 <a href>Layer</a> 中设定一套完全不一样的键值，并在指定键位中放置<a href>TO()</a>键值，即可来回切换</p>
-<blockquote><p><a href>MO()</a> 属于“按住”换层，适用于充当FN键功能<br><a href>TO()</a> 属于“按一下”换层，因为“按一下”后不会切换会之前一层，例如两层切换需要如下设置：在 <a href>Layer 0</a> 中设置一个 <a href>TO(1)</a> ，之后在 <a href>Layer 1</a> 相同位置再设置一个 <a href>TO(0)</a> 回到上层</p>
+    <content><![CDATA[<blockquote><p><a href>MO(1)</a> 属于“按住”换层，适用于充当FN键功能</p>
 </blockquote>
+
+<p><img src="/posts/37564/fn.gif"></p>
+<p>在任何电脑上，FN本身就是一个<strong>换层按键</strong>，不然如何实现同一个按键有两种功能呢？实际上当按下FN按键以后，键盘会切换到别的层去，VIA只不过直观了这一点,</p>
+<p><strong>在VIA中<a href>层管理键</a>中的<a href>mo(1)</a>就是FN的功能，不要设置错了</strong></p>
+<p>VIA软件中的：<br>0层就是我们直接按下键盘用到的层，0层设置一些平时用的到的按键，比如字母和数字按键，同时<a href>mo(1)</a>也要放到这层<br>1层的意思顾名思义是<a href>mo(1)</a>里的1,意思是按下<a href>mo(1)</a>就来到键盘的1层，在1层可以设置一些想用FN+某某按键使用的功能，当然如果设置<a href>mo(2)</a>，当再按下FN按键，键盘会自动切换到2层上，<a href>mo()</a>括号里是是数字几就来到几层上，这里要活学活用</p>
+<p>重点举例！<br>若想实现FN+1=F1的方法<br>第一步：在0层设置一个<a href>mo(1)</a>充当FN按键<br>第二步：切换到1层，在键帽1键对应的位置设置F1<br>设置完毕，非常简单，看不懂的多看看上面的动图</p>
 ]]></content>
   </entry>
   <entry>
