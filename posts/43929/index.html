@@ -123,68 +123,6 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
-        <a onclick="go_top()">文章顶部</a>
-        <a onclick="go_bottom()">文章底部</a>
-    </div>
-</div>
-
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
-
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "全部折叠"
-    }
-
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "全部展开"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
-    
 
     
     <article class="post-wrap">
@@ -207,11 +145,7 @@
         </header>
 
         <div class="post-content">
-            <h3 id="1-界面说明"><a href="#1-界面说明" class="headerlink" title="1.界面说明"></a>1.界面说明</h3><p><img src="/posts/43929/hongjiemian.jpg"></p>
-<p>1.点击“宏设置”开关进入宏设置界面<br>2.宏位置：可以进行15个宏设置（快捷键）<br>3.编辑框：进行宏设置编写，图例为：<a href>{KC_LCTL,KC_C}</a> 注释：复制命令，按键：先按下<a href>左Ctlr键</a>，再按下<a href>C键</a><br>4.基本键码：书写格式为<a href>{键码,键码}</a> ，可置入1个键码或连续多个键码（大写），键码之间用<a href>”,“（英语逗号）</a> 隔开<br>5.保存按钮：保存编辑框内设置好宏命令<br>6.宏设置结束后自动回车按钮（可按需求打开或关闭）</p>
-<h3 id="2-宏编辑教程"><a href="#2-宏编辑教程" class="headerlink" title="2.宏编辑教程"></a>2.宏编辑教程</h3><p>直接输出字符，比如： A B CD<br>解释：<br>保存后可以依次输出“A空格B空格CD”<br>编辑框会记录空格并输出，所以不要输入无关的空格<br>播放宏的时候会按照编辑时的大小写输出，所以需要注意大小写。由于该功能会自动配合Shift实现，有时候仅想输出指定键值，就需要下面的方法</p>
-<p>输出指定键值，比如退格键<br><img src="/posts/43929/tui1.jpg"><br><img src="/posts/43929/tui2.jpg"><br><img src="/posts/43929/tui3.jpg"></p>
-<h3 id="3-宏设置应用"><a href="#3-宏设置应用" class="headerlink" title="3.宏设置应用"></a>3.宏设置应用</h3><p>首先，检查宏设置页面下的 <a href>MACRO 0</a> 的编辑框里有预设好的内容。<br><img src="/posts/43929/shili.jpg"><br>按下方步骤设置即可<br><img src="/posts/43929/shezhifangfa.jpg"></p>
+            <p><img src="/posts/43929/hong.gif"></p>
 
         </div>
 
