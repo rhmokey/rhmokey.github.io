@@ -7,7 +7,7 @@
 </blockquote>
 
 <p>1.下载QMK Toolbox<br>  Windows：<a href="https://mokey.lanzoui.com/i76Ecpbzfpg">点击下载</a><br>  Mac OS：<a href="https://mokey.lanzoui.com/ip5Dopbzeza">点击下载</a></p>
-<p>2.安装QMK Toolbox<br>  Windows下安装：解压至任意目录后打开，会提示install driver，一定要选择 <a href>确定</a> 或者 <a href>Yes</a> 即可安装！若不小心选择了 <a href>取消</a> 或者 <a href>No</a> 则在QMK Toolbox窗体上Flash附近右键，选择 <a href>install driver</a> ,Windows第一次刷固件必须安装驱动！否则刷入固件时出现如下提示：“Atmel DFU device connected （NO DRIVER）”</p>
+<p>2.安装QMK Toolbox<br>  Windows下安装：解压至任意目录后打开，会提示install driver，一定要选择 <a href>确定</a> 或者 <a href>Yes</a> 即可安装！<br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br>否则刷入固件时出现如下提示：“Atmel DFU device connected （NO DRIVER）”</p>
 <p>3.若要是错过安装QMK Toolbox软件的驱动程序，可以单独下载下面的芯片驱动来安装，<strong>不安装此驱动无法刷固件！</strong><br>  <strong><a href="https://mokey.lanzoui.com/iw0aWpbze5a">芯片驱动</a></strong><br>  <a href="../../posts/55414/index.html">驱动安装方法</a> </p>
 <h3 id="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"><a href="#刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法" class="headerlink" title="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"></a>刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法</h3><p>1.设置一个按键为“复位”作用，图中以ESC键为例:<br><img src="/posts/15924/sj1.jpg"><br>2.按下列操作后，按下ESC键位上临时作为“复位”作用的按键，之后QMK Toolbox会自动刷好固件<br><img src="/posts/15924/sj2.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
 <h3 id="刷写方法二：键盘不能正常进入VIA的刷入方法"><a href="#刷写方法二：键盘不能正常进入VIA的刷入方法" class="headerlink" title="刷写方法二：键盘不能正常进入VIA的刷入方法"></a>刷写方法二：键盘不能正常进入VIA的刷入方法</h3><p><img src="/posts/15924/sjff1.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
@@ -122,6 +122,24 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【选看】恢复芯片EEPROM方法</title>
+    <url>/posts/55341/</url>
+    <content><![CDATA[<blockquote><p>如遇到<a href>Caps、Shift、Ctrl、Alt</a>等按键错位可用此方法恢复</p>
+</blockquote>
+<h3 id="第一步：先下载一个板子对应的固件"><a href="#第一步：先下载一个板子对应的固件" class="headerlink" title="第一步：先下载一个板子对应的固件"></a>第一步：先下载一个板子对应的固件</h3><p><a href="../../firmware">点此下载</a></p>
+<h3 id="第二步：下载QMK工具箱"><a href="#第二步：下载QMK工具箱" class="headerlink" title="第二步：下载QMK工具箱"></a>第二步：下载QMK工具箱</h3><p><a href="../../download">点此下载</a></p>
+<h3 id="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"><a href="#第三步：下载刷机必备的芯片驱动，否则电脑不认识它" class="headerlink" title="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"></a>第三步：下载刷机必备的芯片驱动，否则电脑不认识它</h3><p><a href="https://mokey.lanzouw.com/iw0aWpbze5a">点此下载</a></p>
+<h3 id="第四步：点击OPEN将固件添加在这里"><a href="#第四步：点击OPEN将固件添加在这里" class="headerlink" title="第四步：点击OPEN将固件添加在这里"></a>第四步：点击OPEN将固件添加在这里</h3><p><img src="/posts/55341/1.jpg"></p>
+<h3 id="第五步：按下键盘背面的金属按钮（在A键旁边）"><a href="#第五步：按下键盘背面的金属按钮（在A键旁边）" class="headerlink" title="第五步：按下键盘背面的金属按钮（在A键旁边）"></a>第五步：按下键盘背面的金属按钮（在A键旁边）</h3><p><img src="/posts/55341/2.jpg"></p>
+<h3 id="第六步：QMK界面显示这串黄字说明对了"><a href="#第六步：QMK界面显示这串黄字说明对了" class="headerlink" title="第六步：QMK界面显示这串黄字说明对了"></a>第六步：QMK界面显示这串黄字说明对了</h3><p><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br>显示“Atmel DFU device connected （NO DRIVER）”请返回第三步重新安装</p>
+<p><img src="/posts/55341/3.jpg"></p>
+<h3 id="第七步：点击QMK左下角的-“Clear-EEPROM”"><a href="#第七步：点击QMK左下角的-“Clear-EEPROM”" class="headerlink" title="第七步：点击QMK左下角的 “Clear EEPROM”"></a>第七步：点击QMK左下角的 “Clear EEPROM”</h3><p><img src="/posts/55341/4.jpg"></p>
+<h3 id="第八步：QMK会有如下提示"><a href="#第八步：QMK会有如下提示" class="headerlink" title="第八步：QMK会有如下提示"></a>第八步：QMK会有如下提示</h3><p><img src="/posts/55341/5.jpg"></p>
+<h3 id="第九步：出现上述提示后点击右上角-“Flash”"><a href="#第九步：出现上述提示后点击右上角-“Flash”" class="headerlink" title="第九步：出现上述提示后点击右上角 “Flash”"></a>第九步：出现上述提示后点击右上角 “Flash”</h3><p><img src="/posts/55341/6.jpg"></p>
+<h3 id="第十步：出现-“Validating-Success”-说明刷好了"><a href="#第十步：出现-“Validating-Success”-说明刷好了" class="headerlink" title="第十步：出现 “Validating.. Success” 说明刷好了"></a>第十步：出现 “Validating.. Success” 说明刷好了</h3><p><img src="/posts/55341/7.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>【必看】VIA软件使用方法（视频）</title>
     <url>/posts/56583/</url>
     <content><![CDATA[<div style="position:relative; padding-bottom:75%; width:100%; height:0">
@@ -208,9 +226,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>默认按键（json文件）</title>
+    <title>默认按键（一键还原设置）</title>
     <url>/posts/40342/</url>
-    <content><![CDATA[<blockquote><p>此功能的作用是 <a href>一键恢复默认按键设置</a></p>
+    <content><![CDATA[<blockquote><p>此功能的作用是 <a href>一键恢复默认按键设置</a>，还原方法请参考<a href="../../posts/59222/index.html">这个教程</a></p>
 </blockquote>
 <h3 id="默认按键文件下载"><a href="#默认按键文件下载" class="headerlink" title="默认按键文件下载"></a>默认按键文件下载</h3><p><a href="https://mokey.lanzouw.com/iHPvhyp8lha">点此下载</a></p>
 <h3 id="按键设置说明"><a href="#按键设置说明" class="headerlink" title="按键设置说明"></a>按键设置说明</h3><p><img src="/posts/40342/anjian.jpg"></p>

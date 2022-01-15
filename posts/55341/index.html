@@ -12,7 +12,7 @@
 
 
 
-<title>【必看】固件刷写教程(升级固件或更换固件) | Mokey客制化键盘</title>
+<title>【选看】恢复芯片EEPROM方法 | Mokey客制化键盘</title>
 
 
 
@@ -189,7 +189,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">【必看】固件刷写教程(升级固件或更换固件)</h1>
+            <h1 class="post-title">【选看】恢复芯片EEPROM方法</h1>
             
                 <div class="post-meta">
                     
@@ -198,7 +198,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">2021-05-22&nbsp;&nbsp;19:15:12</a>
+                        Date: <a href="#">2021-05-22&nbsp;&nbsp;19:00:30</a>
                         </span>
                     
                     
@@ -207,14 +207,19 @@
         </header>
 
         <div class="post-content">
-            <blockquote><p>硬件，也就是芯片需要驱动级别的程序来支持才能发挥作用，这里指的驱动不是“VIA改键软件”的错误叫法，很多人把VIA叫成驱动？这里的<strong>驱动</strong>是指芯片运行的程序，不要混淆</p>
+            <blockquote><p>如遇到<a href>Caps、Shift、Ctrl、Alt</a>等按键错位可用此方法恢复</p>
 </blockquote>
-
-<p>1.下载QMK Toolbox<br>  Windows：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i76Ecpbzfpg">点击下载</a><br>  Mac OS：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ip5Dopbzeza">点击下载</a></p>
-<p>2.安装QMK Toolbox<br>  Windows下安装：解压至任意目录后打开，会提示install driver，一定要选择 <a href>确定</a> 或者 <a href>Yes</a> 即可安装！<br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br>否则刷入固件时出现如下提示：“Atmel DFU device connected （NO DRIVER）”</p>
-<p>3.若要是错过安装QMK Toolbox软件的驱动程序，可以单独下载下面的芯片驱动来安装，<strong>不安装此驱动无法刷固件！</strong><br>  <strong><a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/iw0aWpbze5a">芯片驱动</a></strong><br>  <a href="../../posts/55414/index.html">驱动安装方法</a> </p>
-<h3 id="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"><a href="#刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法" class="headerlink" title="刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法"></a>刷写方法一：如果可以正常进入VIA或因外壳原因不方便按PCB背面按钮时请使用此方法</h3><p>1.设置一个按键为“复位”作用，图中以ESC键为例:<br><img src="/posts/15924/sj1.jpg"><br>2.按下列操作后，按下ESC键位上临时作为“复位”作用的按键，之后QMK Toolbox会自动刷好固件<br><img src="/posts/15924/sj2.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
-<h3 id="刷写方法二：键盘不能正常进入VIA的刷入方法"><a href="#刷写方法二：键盘不能正常进入VIA的刷入方法" class="headerlink" title="刷写方法二：键盘不能正常进入VIA的刷入方法"></a>刷写方法二：键盘不能正常进入VIA的刷入方法</h3><p><img src="/posts/15924/sjff1.jpg"><br><img src="/posts/15924/sjff2.jpg"></p>
+<h3 id="第一步：先下载一个板子对应的固件"><a href="#第一步：先下载一个板子对应的固件" class="headerlink" title="第一步：先下载一个板子对应的固件"></a>第一步：先下载一个板子对应的固件</h3><p><a href="../../firmware">点此下载</a></p>
+<h3 id="第二步：下载QMK工具箱"><a href="#第二步：下载QMK工具箱" class="headerlink" title="第二步：下载QMK工具箱"></a>第二步：下载QMK工具箱</h3><p><a href="../../download">点此下载</a></p>
+<h3 id="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"><a href="#第三步：下载刷机必备的芯片驱动，否则电脑不认识它" class="headerlink" title="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"></a>第三步：下载刷机必备的芯片驱动，否则电脑不认识它</h3><p><a target="_blank" rel="noopener" href="https://mokey.lanzouw.com/iw0aWpbze5a">点此下载</a></p>
+<h3 id="第四步：点击OPEN将固件添加在这里"><a href="#第四步：点击OPEN将固件添加在这里" class="headerlink" title="第四步：点击OPEN将固件添加在这里"></a>第四步：点击OPEN将固件添加在这里</h3><p><img src="/posts/55341/1.jpg"></p>
+<h3 id="第五步：按下键盘背面的金属按钮（在A键旁边）"><a href="#第五步：按下键盘背面的金属按钮（在A键旁边）" class="headerlink" title="第五步：按下键盘背面的金属按钮（在A键旁边）"></a>第五步：按下键盘背面的金属按钮（在A键旁边）</h3><p><img src="/posts/55341/2.jpg"></p>
+<h3 id="第六步：QMK界面显示这串黄字说明对了"><a href="#第六步：QMK界面显示这串黄字说明对了" class="headerlink" title="第六步：QMK界面显示这串黄字说明对了"></a>第六步：QMK界面显示这串黄字说明对了</h3><p><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br>显示“Atmel DFU device connected （NO DRIVER）”请返回第三步重新安装</p>
+<p><img src="/posts/55341/3.jpg"></p>
+<h3 id="第七步：点击QMK左下角的-“Clear-EEPROM”"><a href="#第七步：点击QMK左下角的-“Clear-EEPROM”" class="headerlink" title="第七步：点击QMK左下角的 “Clear EEPROM”"></a>第七步：点击QMK左下角的 “Clear EEPROM”</h3><p><img src="/posts/55341/4.jpg"></p>
+<h3 id="第八步：QMK会有如下提示"><a href="#第八步：QMK会有如下提示" class="headerlink" title="第八步：QMK会有如下提示"></a>第八步：QMK会有如下提示</h3><p><img src="/posts/55341/5.jpg"></p>
+<h3 id="第九步：出现上述提示后点击右上角-“Flash”"><a href="#第九步：出现上述提示后点击右上角-“Flash”" class="headerlink" title="第九步：出现上述提示后点击右上角 “Flash”"></a>第九步：出现上述提示后点击右上角 “Flash”</h3><p><img src="/posts/55341/6.jpg"></p>
+<h3 id="第十步：出现-“Validating-Success”-说明刷好了"><a href="#第十步：出现-“Validating-Success”-说明刷好了" class="headerlink" title="第十步：出现 “Validating.. Success” 说明刷好了"></a>第十步：出现 “Validating.. Success” 说明刷好了</h3><p><img src="/posts/55341/7.jpg"></p>
 
         </div>
 
@@ -242,10 +247,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/posts/61522/">【必看】灯效调整（按键控制）</a>
+                <a class="prev" rel="prev" href="/posts/40342/">默认按键（一键还原设置）</a>
             
             
-            <a class="next" rel="next" href="/posts/59222/">【必看】保存按键配置</a>
+            <a class="next" rel="next" href="/posts/43929/">宏设置</a>
             
         </section>
 
