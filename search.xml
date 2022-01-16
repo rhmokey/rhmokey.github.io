@@ -129,7 +129,7 @@
 <h3 id="第一步：先下载一个板子对应的固件"><a href="#第一步：先下载一个板子对应的固件" class="headerlink" title="第一步：先下载一个板子对应的固件"></a>第一步：先下载一个板子对应的固件</h3><p><a href="../../firmware">点此下载</a></p>
 <h3 id="第二步：下载QMK工具箱"><a href="#第二步：下载QMK工具箱" class="headerlink" title="第二步：下载QMK工具箱"></a>第二步：下载QMK工具箱</h3><p><a href="../../download">点此下载</a></p>
 <h3 id="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"><a href="#第三步：下载刷机必备的芯片驱动，否则电脑不认识它" class="headerlink" title="第三步：下载刷机必备的芯片驱动，否则电脑不认识它"></a>第三步：下载刷机必备的芯片驱动，否则电脑不认识它</h3><p><a href="https://mokey.lanzouw.com/iw0aWpbze5a">点此下载</a></p>
-<h3 id="第四步：点击OPEN将固件添加在这里"><a href="#第四步：点击OPEN将固件添加在这里" class="headerlink" title="第四步：点击OPEN将固件添加在这里"></a>第四步：点击OPEN将固件添加在这里</h3><p><img src="/posts/55341/1.jpg"></p>
+<h3 id="第四步：点击-“OPEN”将固件添加在这里"><a href="#第四步：点击-“OPEN”将固件添加在这里" class="headerlink" title="第四步：点击 “OPEN”将固件添加在这里"></a>第四步：点击 “OPEN”将固件添加在这里</h3><p><img src="/posts/55341/1.jpg"></p>
 <h3 id="第五步：按下键盘背面的金属按钮（在A键旁边）"><a href="#第五步：按下键盘背面的金属按钮（在A键旁边）" class="headerlink" title="第五步：按下键盘背面的金属按钮（在A键旁边）"></a>第五步：按下键盘背面的金属按钮（在A键旁边）</h3><p><img src="/posts/55341/2.jpg"></p>
 <h3 id="第六步：QMK界面显示这串黄字说明对了"><a href="#第六步：QMK界面显示这串黄字说明对了" class="headerlink" title="第六步：QMK界面显示这串黄字说明对了"></a>第六步：QMK界面显示这串黄字说明对了</h3><p><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br><a href>！Windows第一次刷固件必须安装驱动！</a><br>显示“Atmel DFU device connected （NO DRIVER）”请返回第三步重新安装</p>
 <p><img src="/posts/55341/3.jpg"></p>
@@ -167,7 +167,7 @@
 </blockquote>
 <p><strong>VIA改键软件，修改按键设置用的，俗称“驱动”</strong><br>您可以根据自己的系统下载需要的版本，除 <strong>Mokey中文版</strong> 是rar压缩包的，解压后直接可以使用，其他都是需要安装后再使用。<br><img src="/posts/40421/jieya.gif"></p>
 <ul>
-<li><a href="https://mokey.lanzouw.com/iVW38pbz25i">Mokey中文版-Win</a></li>
+<li><a href="https://mokey.lanzouw.com/iqcfXyvbv0h">Mokey中文版-Win</a></li>
 <li><a href="https://mokey.lanzouw.com/ih2jUpbz35e">英文原版-Win</a></li>
 <li><a href="https://mokey.lanzouw.com/i93afpw45vc">MAC英文版</a><br>曾有很多次客户问我为什么软件打不开，我一看原来是从压缩包里打开的软件，那是不行的，因为支持它运行的其他文件还在压缩包里，需要您将压缩包的内容全部解压到您的电脑上，之后再打开软件使用，这时候您可能需要先下载一个RAR解压缩软件，解压后再打开中文版 <a href="https://www.winrar.com.cn/">RAR解压缩软件点此下载</a></li>
 </ul>
